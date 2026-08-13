@@ -1,5 +1,6 @@
 body {
     background-color: rgba(33, 37, 41, 0.975);
+    color: aliceblue;
 }
 
 button {
@@ -30,4 +31,18 @@ div {
 
 #navbar-icon {
     padding-left: 15px;
+}
+
+#circle {
+    background-color: red;
+    border-top-right-radius: 100vh;
+    border-top-left-radius: 100vh;
+}
+
+label {
+    padding: 5px;
+}
+
+form {
+    background-color: red;
 }

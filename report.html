@@ -11,7 +11,7 @@
 
 <body>
   <nav id="navbar-icon" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <img src="https://logos-world.net/wp-content/uploads/2021/08/Haikyuu-Symbol.png" width="100px" alt="Haikyuu Symbol"
+    <img src="assets/Haikyuu-Symbol.png" width="100px" alt="Haikyuu Symbol"
       class="rounded float-start" href="homepage.html"></img>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,25 @@
       </form>
     </div>
   </nav>
+
+  <form>
+    <label for="name">Name: </label>
+    <input type="text" name="name"></input><br>
+    <label for="charName">Character Name: </label>
+    <input type="text" name="charName"></input><br>
+    <label for="position">Position: </label>
+    <select id="pos" name="position">
+      <option value="wspiker">Wing Spiker</option>
+        <option value="lib">Libero</option>
+        <option value="mblock">Middle Blocker</option>
+        <option value=""></option>
+        <option value=""></option>
+    </select><br>
+
+    <label for="why">Why Should We Add This Character?</label><br>
+    <textarea name="why" rows="5" cols="40
+    "></textarea>
+  </form>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
