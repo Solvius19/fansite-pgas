@@ -2,10 +2,6 @@ body {
     background-color: rgba(33, 37, 41, 0.975);
 }
 
-img {
-    margin-left: 20px;
-}
-
 button {
     margin-right: 15px;
 }
@@ -14,4 +10,24 @@ nav {
     background-color: black;
     border-bottom: 1px solid white;
     border-style: dashed;
+}
+
+footer {
+    border-top: 1px solid white;
+    border-style: dashed;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    padding-top: 10px;
+}
+div {
+    color: white;
+    border: 1px solid white;
+}
+
+#navbar-icon {
+    padding-left: 15px;
 }
