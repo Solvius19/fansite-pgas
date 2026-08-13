@@ -10,23 +10,17 @@ button {
 nav {
     background-color: black;
     border-bottom: 1px solid white;
-    border-style: dashed;
+    border-bottom: solid;
 }
 
 footer {
     border-top: 1px solid white;
-    border-style: dashed;
+    border-style: solid;
     color: white;
-    align-items: center;
-    justify-content: center;
 }
 
 #name {
     padding-top: 10px;
-}
-div {
-    color: white;
-    border: 1px solid white;
 }
 
 #navbar-icon {
@@ -41,8 +35,4 @@ div {
 
 label {
     padding: 5px;
-}
-
-form {
-    background-color: red;
 }
