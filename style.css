@@ -27,10 +27,14 @@ footer {
     padding-left: 15px;
 }
 
-#circle {
-    background-color: red;
-    border-top-right-radius: 100vh;
-    border-top-left-radius: 100vh;
+#background {
+    background-color: rgb(184, 154, 59);
+    height: 70vh;
+}
+
+#floor {
+    background-color: rgb(235, 203, 98);
+    height: 20vh;
 }
 
 label {
