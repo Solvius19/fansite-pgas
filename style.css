@@ -30,11 +30,36 @@ footer {
 #background {
     background-color: rgb(184, 154, 59);
     height: 70vh;
+    justify-items: center;
 }
 
 #floor {
+    border-top: 1px solid black;
     background-color: rgb(235, 203, 98);
     height: 20vh;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    align-items: stretch;
+}
+
+.game {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100%;
+}
+
+.game p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 label {
@@ -55,4 +80,47 @@ label {
     display: grid;
     justify-content: center;
     text-align: center;
+}
+
+#buzzer {
+    background-color: gray;
+    max-width: 180px;
+    margin: 2rem auto;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    font-size: 30px;
+}
+
+#buzzer .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    gap: 0.5rem;
+    width: 100%;
+    min-height: 100%;
+}
+
+#buzzer p {
+    margin: 0;
+    line-height: 1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-score,
+#away-score,
+#dots {
+    color: red;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    text-align: center;
+    font-family: "Alarm Clock", "Alarm", sans-serif;
+    letter-spacing: 0.04em;
+}
+
+@font-face {
+    font-family: "Alarm Clock";
+    src: url("alarm clock.ttf") format("truetype");
 }
