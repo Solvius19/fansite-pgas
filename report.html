@@ -37,24 +37,32 @@
     </div>
   </nav>
 
-  <form>
-    <label for="name">Name: </label>
-    <input type="text" name="name"></input><br>
-    <label for="charName">Character Name: </label>
-    <input type="text" name="charName"></input><br>
-    <label for="position">Position: </label>
-    <select id="pos" name="position">
-      <option value="wspiker">Wing Spiker</option>
-        <option value="lib">Libero</option>
-        <option value="mblock">Middle Blocker</option>
-        <option value=""></option>
-        <option value=""></option>
-    </select><br>
-
-    <label for="why">Why Should We Add This Character?</label><br>
-    <textarea name="why" rows="5" cols="40
-    "></textarea>
-  </form>
+  <main class="container py-5">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" name="name" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="charName" class="form-label">Character Name:</label>
+        <input type="text" name="charName" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label for="position" class="form-label">Position:</label>
+        <select id="pos" name="position" class="form-select">
+          <option value="wspiker">Wing Spiker</option>
+          <option value="lib">Libero</option>
+          <option value="mblock">Middle Blocker</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="col-12">
+        <label for="why" class="form-label">Why Should We Add This Character?</label>
+        <textarea name="why" rows="5" class="form-control"></textarea>
+      </div>
+    </form>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
