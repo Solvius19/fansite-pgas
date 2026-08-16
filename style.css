@@ -1,60 +1,58 @@
 body {
-  background-color: rgba(33, 37, 41, 0.975);
-  color: aliceblue;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
-  padding-top: 1.5rem;
-  padding-bottom: 2rem;
+    background-color: rgba(33, 37, 41, 0.975);
+    color: aliceblue;
 }
 
 button {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 nav {
-  background-color: black;
-  border-bottom: 1px solid white;
-  position: sticky;
-  top: 0;
-  z-index: 1030;
+    background-color: black;
+    border-bottom: 1px solid white;
+    border-bottom: solid;
 }
 
 footer {
-  border-top: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
-  width: 100%;
+    border-top: 1px solid white;
+    border-style: solid;
+    color: white;
 }
 
 #name {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 #navbar-icon {
-  padding-left: 15px;
+    padding-left: 15px;
 }
 
-#circle {
-  background-color: red;
-  border-top-right-radius: 100vh;
-  border-top-left-radius: 100vh;
-  width: 100%;
-  height: 120px;
-  margin-top: 2rem;
+#background {
+    background-color: rgb(184, 154, 59);
+    height: 70vh;
+}
+
+#floor {
+    background-color: rgb(235, 203, 98);
+    height: 20vh;
 }
 
 label {
-  padding: 5px;
+    padding: 5px;
 }
 
-.hexagon-clip {
-  width: 180px;
-  height: 200px;
-  background-color: #6c6;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+#complaint {
+    background-color: rgb(167, 167, 167);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 4px;
+    border-color: pink;
+    border-width: 15px;
+}
+
+#reportContent {
+    margin-top: 5px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
