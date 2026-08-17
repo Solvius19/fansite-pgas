@@ -23,12 +23,15 @@ footer {
     padding-top: 10px;
 }
 
+#game-name {
+    margin-top: 5px;
+}
+
 #navbar-icon {
     padding-left: 15px;
 }
 
 #background {
-    background-color: rgb(184, 154, 59);
     height: 70vh;
     justify-items: center;
 }
@@ -45,34 +48,18 @@ footer {
     align-items: stretch;
 }
 
-.game {
-    flex: 0 0 auto;
-    width: 100%;
-    scroll-snap-align: start;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    min-height: 100%;
-}
-
-.game p {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-}
-
 label {
     padding: 5px;
 }
 
 #complaint {
-    background-color: rgb(167, 167, 167);
+    font-size: larger;
+    background-color: rgb(124, 124, 124);
     width: fit-content;
     padding: 7px;
-    border-radius: 4px;
-    border-color: pink;
-    border-width: 15px;
+    border-radius: 20px;
+    border: rgb(184, 184, 184) 2px solid;
+    border-width: 12px;
 }
 
 #reportContent {
@@ -80,47 +67,4 @@ label {
     display: grid;
     justify-content: center;
     text-align: center;
-}
-
-#buzzer {
-    background-color: gray;
-    max-width: 180px;
-    margin: 2rem auto;
-    padding: 0.75rem 1rem;
-    border-radius: 12px;
-    font-size: 30px;
-}
-
-#buzzer .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    gap: 0.5rem;
-    width: 100%;
-    min-height: 100%;
-}
-
-#buzzer p {
-    margin: 0;
-    line-height: 1;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#home-score,
-#away-score,
-#dots {
-    color: red;
-    font-size: clamp(1.8rem, 4vw, 3rem);
-    text-align: center;
-    font-family: "Alarm Clock", "Alarm", sans-serif;
-    letter-spacing: 0.04em;
-}
-
-@font-face {
-    font-family: "Alarm Clock";
-    src: url("alarm clock.ttf") format("truetype");
 }
