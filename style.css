@@ -12,15 +12,8 @@ nav {
     border-bottom: 1px solid white;
     border-bottom: solid;
 }
-
-footer {
-    border-top: 1px solid white;
-    border-style: solid;
-    color: white;
-}
-
-#name {
-    padding-top: 10px;
+#overview {
+    margin-top: 10px;
 }
 
 #game-name {
@@ -67,4 +60,95 @@ label {
     display: grid;
     justify-content: center;
     text-align: center;
+}
+
+.character-main {
+    padding-bottom: 22vh;
+}
+
+.character-layout {
+    align-items: flex-start;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.text-row {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.character-image-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.character-image-controls #left,
+.character-image-controls #right {
+    margin-right: 0;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+}
+
+#stats {
+    display: block;
+    margin: 6px 0 0;
+    width: min(100%, 240px);
+    height: auto;
+}
+
+#full-body {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 90%;
+    height: calc(100vh - 28vh);
+    max-height: calc(100vh - 28vh);
+    object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+    #stats {
+        width: min(100%, 280px);
+    }
+
+    #full-body {
+        height: calc(100vh - 26vh);
+        max-height: calc(100vh - 26vh);
+    }
+}
+
+#thumbnail {
+    height: 16vh;
+    width: 16vh;;
+}
+
+@media (max-width: 767.98px) {
+    .character-main {
+        padding-bottom: 24vh;
+    }
+
+    .text-row {
+        text-align: center;
+    }
+
+    #stats {
+        margin: 3px auto 0;
+        width: min(100%, 210px);
+    }
+
+    #full-body {
+        height: calc(100vh - 42vh);
+        max-height: calc(100vh - 42vh);
+    }
+
+    .character-image-controls {
+        gap: 8px;
+    }
+}
+
+#left, #right {
+    background-color: rgb(238, 163, 13);
 }

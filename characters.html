@@ -37,30 +37,50 @@
     </div>
   </nav>
 
-  <main class="container-fluid py-4">
-    <div class="row align-items-center g-4">
-      <div class="col-12 col-lg-6">
-        <p>Description</p>
-        <img id="stats" src=""><img>
+  <main id="content" class="container-fluid py-4 character-main">
+    <div class="row g-4 align-items-start character-layout">
+      <div class="col-12 col-md-3">
+        <div class="text-row">
+          <h2 id="name" class="mb-0">Kei Tsukishima</h2>
+        </div>
+        <div class="text-row">
+          <p id="team" class="mb-0">Karasuno High School</p>
+        </div>
+        <div class="text-row">
+          <h3 class="mb-0">Position</h3>
+        </div>
+        <div class="text-row">
+          <p id="position" class="mb-0">Middle Blocker</p>
+        </div>
+        <div class="text-row">
+          <h3 class="mb-0">Height</h3>
+        </div>
+        <div class="text-row">
+          <p id="height" class="mb-0">188 cm</p>
+        </div>
+        <div class="text-row">
+          <img id="stats" src="assets/stats.jpg" alt="Character stats">
+        </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <!-- <img src="assets/tsukki-full.jpg" id="full-body" class="img-fluid"></img> -->
+
+      <div class="col-12 col-md-6 character-image-controls">
+        <button class="btn btn-primary mb-3" id="left"><</button>
+        <img src="assets/tsukki-full.jpg" id="full-body" alt="Kei Tsukishima full body">
+        <button class="btn btn-primary mb-3" id="right">></button>
+      </div>
+
+      <div class="col-md-3">
+        <div class="text-row">
+          <h2 class="mb-0">Character Overview</h2>
+        </div>
+        <div class="text-row">
+          <p id="description" class="mb-0">Kei Tsukishima is a first-year student at Karasuno High School and a member of the volleyball team. He is known for his tall stature, sharp intellect, and analytical approach to the game. Despite his initially aloof demeanor, he gradually develops strong bonds with his teammates and becomes a key player in their matches.</p>
+        </div>
       </div>
     </div>
   </main>
 
-  <footer class="container-fluid py-3" id="stats">
-    <div class="row align-items-center">
-      <div id="character-icon" class="col-3 col-md-2">
-        <img src="assets/tsukki.jpg" class="img-thumbnail" alt="character_icon"></img>
-      </div>
-      <div id="character-info" class="col-9 col-md-10">
-        <h3 id="name">Kei Tsukishima</h3>
-        <p>Middle Blocker</p>
-        <p>Captain</p>
-      </div>
-    </div>
-  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
