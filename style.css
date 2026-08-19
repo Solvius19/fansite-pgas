@@ -169,6 +169,8 @@ label {
 .floatbox {
     flex: 0 0 calc(100vw - 40px);
     height: 80vh;
+    position: relative;
+    overflow: hidden;
     color:#ffffff;
     margin-top:20px;
     scroll-snap-align: start;
@@ -209,8 +211,36 @@ marquee {
 
 #ant {
     border-color: white;
-    height: 65vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+    height: 76vh;
+    max-width: 58%;
+    object-fit: contain;
+    object-position: bottom right;
+}
+
+.quote {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    width: 42%;
+    margin: 0;
+    z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+    #ant {
+        right: 0;
+        height: 72vh;
+        max-width: 62%;
+    }
+
+    .quote {
+        width: 52%;
+    }
+}
+
+#buzzer {
+    width: 50vh;
 }
