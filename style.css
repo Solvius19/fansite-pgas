@@ -143,6 +143,7 @@ label {
 
 #wrapper {
     width: 100vw;
+    height: 88vh;
     margin: 30px auto;
     border:1px solid #000;
     background:rgb(250, 211, 84);
@@ -150,22 +151,44 @@ label {
 }
 #outer-wrap {
     width: 100vw; 
-    height: 55vh;
+    height: 88vh;
     margin:0 auto;
     overflow: auto; 
-    background:#dfcd66;
+    background:rgba(33, 37, 41, 0.975);
     border:1px solid #000; 
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 20px;
+    scroll-behavior: smooth;
 }
 #inner-wrap {
-    float:left;
-    margin-right:-999em;
-    padding-left:20px;
+    display: flex;
+    width: max-content;
+    gap: 20px;
+    padding: 0 20px;
 }
 .floatbox {
-    float:left; /*force into block level for dimensions*/
-    width: 92vw;
-    height: 50vh;
-    background:blue;
+    flex: 0 0 calc(100vw - 40px);
+    height: 80vh;
     color:#ffffff;
-    margin:20px 20px 0 0;
+    margin-top:20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#ab-game {
+    background-image: linear-gradient(to bottom right, #F2994A, #6dd5ed);
+}
+
+#sz-game {
+    background-image: linear-gradient(to bottom right, #F2994A, #8E2DE2);
+}
+
+#iz-game {
+    background-image: linear-gradient(to bottom right, #F2994A, #141E30);
+}
+
+#nk-game {
+    background-image: linear-gradient(to bottom right, #F2994A, #ff0000);
 }
