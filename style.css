@@ -192,3 +192,25 @@ label {
 #nk-game {
     background-image: linear-gradient(to bottom right, #F2994A, #ff0000);
 }
+
+marquee {
+    background-color: orange;
+    padding: 20px;
+
+}
+
+#meme {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#ant {
+    border-color: white;
+    height: 65vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
