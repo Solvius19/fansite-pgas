@@ -70,7 +70,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 2px;
 }
 
 .character-image-controls #left,
@@ -133,7 +133,7 @@ label {
     }
 
     .character-image-controls {
-        gap: 8px;
+        gap: 4px;
     }
 }
 
@@ -242,5 +242,5 @@ marquee {
 }
 
 #buzzer {
-    width: 50vh;
+    width: 55vh;
 }
